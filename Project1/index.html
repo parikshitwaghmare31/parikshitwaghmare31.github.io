@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>NUMBER CONVERTER</h1>
+            </div>
+
+            <form class="Main">
+
+                <label id="label0" for="input">
+                    <select name="inputBase" id="inputBase" class="select">
+                        <option value="binary">Binary</option>
+                        <option value="octal">Octal</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                    </select>
+                </label>
+
+                <input type="text" id="input" placeholder="Enter_Number" class="input_output_field">
+
+                <label for="output" id="label1">
+                    <select name="outputBase" id="outputBase" class="select">
+                        <option value="binary">Binary</option>
+                        <option value="octal">Octal</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                    </select>
+                </label>
+
+                <input type="text" id="output" placeholder="Output" readonly class="input_output_field">
+
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js" alt="JavaScript"></script>
+</body>
+
+</html>

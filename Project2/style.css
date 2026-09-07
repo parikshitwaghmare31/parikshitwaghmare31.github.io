@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin:auto;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./src/bg2.jpg") ;
+}
+
+.container{
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    border: 10px solid transparent;
+    border-radius: 16px; /* Adjust radius as desired */
+    background-image: 
+    linear-gradient(rgb(29, 34, 50)), 
+    linear-gradient(45deg, #ff0000, #0000ff); /* Replace with your desired border gradient */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.title h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.title p{
+    font-size: 1rem;
+    color: rgb(152, 143, 143);
+}
+
+.coin{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    height: 7rem;
+    background-color: rgb(201, 154, 66);
+    border: 0.5rem solid rgb(224, 224, 103);
+    border-radius: 50%;
+    justify-self: center;
+    align-items: center;
+}
+
+#Face{
+    position: relative;
+    font-size: 4.7rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(224, 224, 103);
+}
+
+
+.flip {
+    animation: flipCoin 1s ease-in-out;
+}
+
+@keyframes flipCoin {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(1080deg);
+    }
+}
+
+.shadow {
+    display: block;
+    width: 6rem;                  /* Slightly narrower than the coin for a natural look */
+    height: 0.8rem;               /* Oval shape */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark semi-transparent color */
+    border-radius: 50%;           /* Curves into an ellipse */
+    filter: blur(1px);            /* Softens the shadow edges */
+    margin-top: 0.5rem;           /* Adds space between the coin and shadow */
+}
+
+#curr_face{
+    color: white;
+    font-size: 1.7rem;
+}
+
+#click_me{
+    display: flex;
+    width: 7rem;
+    height: 2.5rem;
+    background-color: rgb(41, 41, 223);
+    color: white;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #click_me:hover{
+    background-color: #3b3b53;
+} */
