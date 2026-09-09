@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Subscription_Checkout</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="section_A">
+
+            <div class="header">
+                <img src="./src/logo1.png" alt="logo">
+                <h1>Upgrades to Plus</h1>
+                <p>Upgrade today and take your AI-powered productivity to the next level.</p>
+            </div>
+
+            <div class="wrapper">
+                            <!-- Biller div start -->
+            <div class="Biller">
+                <label for="name_field">Billed to</label>
+                <input type="text" placeholder="Enter first & last name" id="name_field">
+            </div>
+
+            <!-- Payment Options div start -->
+            <div class="payment_options">
+                <h5>Payment Details</h5>
+                <div class="options">
+                    <div class="option" id="credit_card">
+                        <img src="./src/credit_card.png" alt="creditCard" id="pay_icons">
+                        <p>Credit Card</p>
+                    </div>
+                    <div class="option" id="bank_transfer">
+                        <img src="./src/bank.png" alt="Bank_transfer" id="pay_icons">
+                        <p>Bank Transfer</p>
+                    </div>
+                    <div class="option" id="re_Points">
+                        <img src="./src/points.png" alt="points" id="pay_icons">
+                        <p>Points</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Email">
+                    <label for="email_field">Email Address</label>
+                    <input type="text" placeholder="Enter email address" id="email_field">
+            </div>
+
+            <!-- Address div start -->
+            <div class="Address">
+
+                    <div class="country">
+                        <label for="country_field">Country</label>
+                        <input type="text" placeholder="Enter first & last name" id="country_field">
+                    </div>
+                    <div class="pincode">
+                        <label for="pincode_field">Pincode</label>
+                        <input type="text" placeholder="Enter first & last name" id="pincode_field">
+                    </div>
+                    <!-- address div close -->
+            </div>
+
+
+            <div class="Action">
+                <button type="button" id="cancelBtn"> Cancel</button>
+                <button type="button" id="subscribeBtn"> Subscribe</button>
+            </div>
+        </div>
+
+
+            <!-- section A end here -->
+        </div>
+
+
+
+        <div class="section_B">
+            <h1 id="plan"> Starter Plan</h1>
+            <div class="plan_1" name="Plan">
+               
+                <div class="left">
+                     <input type="radio" name="plan" id="monthlyPlan" value="monthly">
+                </div>
+                <div class="right">
+                    <h2>Pay monthly</h2>
+                    <p>$20/Month/Member</p>
+                </div>  
+            </div>
+
+            <div class="plan_2" name="Plan">
+                <div class="left">
+                    <input type="radio" name="plan" id="annualPlan" value="annual">
+                </div>
+                <div class="right">
+                    <h2>Pay Annual</h2>
+                    <P>$16/Month/Member</P>
+                </div>
+            </div>
+
+            <div class="checkout">
+                <div class="grand_total">
+                <h3 id="total">Total</h3>
+                <h3 id="Amt">$20/Month</h3>
+                </div>
+                <div class="note">
+                    <img src="./src/padlock.png" alt="lock">
+                    <p> The environment is for demonstration purpose only. Please retain from entering any actual sensitive data</p>
+                </div>
+            
+            </div>
+            <div class="footer_img">
+                <img src="./src/img_2.png" alt="footerimage" id="img">
+            </div>
+            
+
+            <!-- section B ends here -->
+        </div>
+
+
+
+
+        <!-- container div end -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
