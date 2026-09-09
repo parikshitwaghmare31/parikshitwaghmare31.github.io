@@ -20,7 +20,7 @@ The projects range from basic web development exercises to more advanced project
 ### Project 1 — ASCII Table
 
 **Date:** 06 September 2026 </br>
-**Url:** <a href="https://parikshitwaghmare31.github.io/Project1/ASCII_Table/" >parikshitwaghmare31.github.io/Project1/ASCII_Table</a>
+**Url:** <a href="https://parikshitwaghmare31.github.io/Project1/" >parikshitwaghmare31.github.io/Project1/</a>
 
 A simple project that demonstrates the representation of an ASCII table using basic web technologies such as HTML, CSS, and JavaScript.
 
