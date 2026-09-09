@@ -1,49 +1,38 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <title>ASCII Table</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="content">
-            <div class="title">
-                <h1>NUMBER CONVERTER</h1>
-            </div>
-
-            <form class="Main">
-
-                <label id="label0" for="input">
-                    <select name="inputBase" id="inputBase" class="select">
-                        <option value="binary">Binary</option>
-                        <option value="octal">Octal</option>
-                        <option value="decimal">Decimal</option>
-                        <option value="hexadecimal">Hexadecimal</option>
-                    </select>
-                </label>
-
-                <input type="text" id="input" placeholder="Enter_Number" class="input_output_field">
-
-                <label for="output" id="label1">
-                    <select name="outputBase" id="outputBase" class="select">
-                        <option value="binary">Binary</option>
-                        <option value="octal">Octal</option>
-                        <option value="decimal">Decimal</option>
-                        <option value="hexadecimal">Hexadecimal</option>
-                    </select>
-                </label>
-
-                <input type="text" id="output" placeholder="Output" readonly class="input_output_field">
-
-            </form>
-        </div>
+    <h1>ASCII Table</h1>
+    <div class="pages">
+        <h3> For instantant conversion please click on following glowing text</h3>
+        <a href="NumConversion.html">Number_Converter</a>
     </div>
 
-    <script src="index.js" alt="JavaScript"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>Decimal</th>
+                <th>Octal</th>
+                <th>Hex</th>
+                <th>Binary</th>
+                <th>Symbol</th>
+                <th>HTML Number</th>
+                <th>HTML Name</th>
+            </tr>
+        </thead>
+
+        <tbody id="asciiTableBody">
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

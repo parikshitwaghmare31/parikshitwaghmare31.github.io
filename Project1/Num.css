@@ -1,0 +1,86 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 3px 4px 5px orange;
+}
+
+/* Input & Dropdown Groups */
+.Main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid;
+  border-radius: 8px;
+  box-shadow: 5px 5px 6px #3b0a47;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Dropdown */
+select {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Text Input */
+input {
+  background-color: #ffffff;
+  color: #1f2937;
+  flex: 1.5;
+}
+
+select:focus,
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .input-group {
+    flex-direction: column;
+  }
+}
