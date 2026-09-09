@@ -19,11 +19,10 @@ body{
     margin: auto;
     padding: 10px;
     width: 100%;
-    max-width: 400px;
-    height: 600px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     gap: 20px;
     border: 10px solid transparent;
@@ -45,12 +44,12 @@ body{
     gap: 5px;
 }
 .title h1{
-    font-size: 3rem;
+    font-size: 5rem;
     color: white;
 }
 
 .title p{
-    font-size: 1rem;
+    font-size: 2rem;
     color: rgb(152, 143, 143);
 }
 
@@ -58,8 +57,8 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
     background-color: rgb(201, 154, 66);
     border: 0.5rem solid rgb(224, 224, 103);
     border-radius: 50%;
@@ -69,7 +68,7 @@ body{
 
 #Face{
     position: relative;
-    font-size: 4.7rem;
+    font-size: 8rem;
     font-family: 'Times New Roman', Times, serif;
     color:rgb(224, 224, 103);
 }
@@ -101,22 +100,22 @@ body{
 
 #curr_face{
     color: white;
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 
 #click_me{
     display: flex;
-    width: 7rem;
-    height: 2.5rem;
+    width: 12rem;
+    height: 5rem;
     background-color: rgb(41, 41, 223);
     color: white;
     border-radius: 6px;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
     align-items: center;
     justify-content: center;
 }
 
-/* #click_me:hover{
+#click_me:hover{
     background-color: #3b3b53;
-} */
+}
