@@ -503,9 +503,9 @@ function drawPetal(ctx, length, width, colorA, colorB) {
       }
 
       // Draw Center Pollen Bulb
-      ctx.resetTransform()
       const centerRadius = basePetalLength * 0.19;
       drawFlowerCenter(ctx, centerRadius, palette, t);
+      ctx.restore();
       // Render floating particles & pollen sparkles
       for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i];
